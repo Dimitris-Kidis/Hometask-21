@@ -29,14 +29,11 @@ namespace App
         [Test]
         public void ItShouldCreateCars()
         {
-            // Arrange
             var mockEngine = new Mock<IEngine>();
             var automobile = new Automobile(mockEngine.Object);
 
-            // Act
             automobile.TurnOn();
 
-            // Assert
             mockEngine.Verify();
         }
     }
