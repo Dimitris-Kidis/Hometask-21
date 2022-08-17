@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace App
 {
-    public class Equotion
+    public class Equation
     {
-        public Equotion() { }
+        public Equation() { }
 
         public int CheckSQRTPart(double a, double b, double c)
         {

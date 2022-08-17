@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace App
 {
     [TestFixture]
-    class TestClass
+    class EquationTests
     {
         private int setUpVar;
 
@@ -18,7 +18,7 @@ namespace App
         [Test]
         public void CheckSQRTPartReturnsInt(int a, int b, int c)
         {
-            Equotion eq = new Equotion();
+            Equation eq = new Equation();
             int result = eq.CheckSQRTPart(a, b, c);
             Assert.AreEqual(-1, result);
         }
@@ -28,7 +28,7 @@ namespace App
         [Test]
         public void CheckConversionReturnsInt(string str)
         {
-            Equotion eq1 = new Equotion();
+            Equation eq1 = new Equation();
             int result = eq1.RomanToInteger(str);
             Assert.AreEqual(6, result);
         }

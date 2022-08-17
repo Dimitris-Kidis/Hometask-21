@@ -34,7 +34,7 @@ namespace App
 
             automobile.TurnOn();
 
-            mockEngine.Verify();
+            mockEngine.Verify(m => m.TurnOnTheEngine(), Times.Once());
         }
     }
 
